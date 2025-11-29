@@ -9,7 +9,7 @@ export default function Contact() {
 		<div>
 			<HeroSection heroImage={contactHeroImage} title="联系我们" />
 			<SocialMedia />
-			<h2 className = "contact-heading">赞助合</h2>
+			<h2 className = "contact-heading">赞助合作</h2>
 			<Support />
 			<img src = {wechatCode} alt="QR code" className = "wechatCode-img"/>
 		</div>
