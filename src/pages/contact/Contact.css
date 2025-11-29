@@ -31,7 +31,7 @@
 
 .group-photo-container {
     position: relative;
-    width: 700px;
+    width: 700px;      
     flex-shrink: 0;
 }
 
@@ -51,4 +51,43 @@
     height: auto;
     object-fit: contain;
     display: block;
+}
+.hero-background {
+  height: 330px;              /* 你想要多高都行 */
+  aspect-ratio: 60 / 17;
+  background-size: contain;   /* ✅ 完整展示 */
+  background-repeat: no-repeat;
+  background-position: center
+}
+.contact-heading {
+    font-size: 40px;
+    color: #8c1e1f;
+    /* text-align: center; */
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    padding-left: 13rem;
+}
+.social-media-frame {
+  max-width: 1400px;
+  margin: 0 auto;
+  background: #8c1e1f;
+  padding: 60px;             /* 白框内部边距（越大越像第二张图） */
+  box-sizing: border-box;
+}
+.wechatCode-img {
+    width: 200px;
+    height: auto;
+    display: block;
+    margin-left: 12rem;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+.support-content {
+    font-size: 20px;
+    color: #000000;
+    margin-left: 13rem;
+}
+.support-content p {
+  margin: 0px 0;        /* 你想更紧就改成 0~4px */
+  line-height: 1.4;     /* 可选：控制行距 */
 }
