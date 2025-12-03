@@ -1,11 +1,18 @@
 import './About.css'
+import HeroSection from '../../components/HeroSection';
+import guideHeroImage from '../../assets/about-hero.jpg';
+import Intro from './Intro';
+import History from './History';
+import Join from './Join';
 import { departmentsData } from './departmentsData';
 import DepartmentCard from './DepartmentCard';
 
 export default function About() {
 	return (
 		<div>
-			<h1> About </h1>
+			<HeroSection heroImage={guideHeroImage} title="关于CSSA" />
+			<Intro />
+			<History />
 			<div className="departments-container">
 				<h2 className="departments-heading">部门介绍</h2>
 				<p>
@@ -17,6 +24,9 @@ export default function About() {
 					))}
 				</div>
 			</div>
+		<div className= "join-container">
+			<Join />
+		</div>
 		</div>
 	);
 }
