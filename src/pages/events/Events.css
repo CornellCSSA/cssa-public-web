@@ -20,6 +20,18 @@ button:hover {
     color: #8c1e1f;
 }
 
+.upcoming-events-heading {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.upcoming-events-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding-bottom: 4rem;
+}
+
 .upcoming-event-card {
   display: flex;
   width: 650px;
@@ -49,6 +61,22 @@ button:hover {
 
 .upcoming-event-card p {
     font-size: 13px;
+}
+
+.events-outer-container {
+  background-color: #8c1e1f;
+  padding: 3rem 4rem;
+}
+
+.events-heading {
+  text-align: center;
+  color: white;
+}
+
+.events-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
 }
 
 .event-card {
