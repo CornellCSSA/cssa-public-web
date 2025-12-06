@@ -4,9 +4,9 @@ import historyImage from '../../assets/about-history.jpg';
 export default function History() {
     return (
         <div className="history-outer-container">
-            <h2 className="history-heading">CSSA历史</h2>
             <div className="history-container">
                 <div className="history-timeline">
+                    <h2 className="history-heading">CSSA历史</h2>
                     <div className="timeline-entry">
                         <div className="timeline-year">1904</div>
                         <div className="timeline-content">

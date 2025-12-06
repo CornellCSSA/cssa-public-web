@@ -1,15 +1,15 @@
 import './About.css';
-import introImage from '../../assets/about-intro.jpeg';
+import groupPhoto from '../../assets/group-photo.jpg';
 
 export default function Intro() {
     return (
         <div>
-            <h2 className="intro-heading">CSSA简介</h2>
             <div className="intro-container">
                 <div className="intro-image">
-                    <img src={introImage} alt="CSSA简介" />
+                    <img src={groupPhoto} alt="CSSA简介" />
                 </div>
                 <div className="intro-content">
+                    <h2 className="intro-heading">CSSA简介</h2>
                     <p>
                         康奈尔大学中国学生学者联合会（Cornell CSSA）是由康奈尔大学的中国学生、学者及教职员工组成的非盈利性互助组织，也是康奈尔大学唯一受中国驻美大使馆认证的华人学联。
                     </p>

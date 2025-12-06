@@ -24,9 +24,7 @@ export default function About() {
 					))}
 				</div>
 			</div>
-		<div className= "join-container">
 			<Join />
-		</div>
 		</div>
 	);
 }
