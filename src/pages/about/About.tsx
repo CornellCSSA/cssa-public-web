@@ -1,6 +1,6 @@
 import './About.css'
 import HeroSection from '../../components/HeroSection';
-import guideHeroImage from '../../assets/about-hero.jpg';
+import aboutHeroImage from '../../assets/about-hero.jpg';
 import Intro from './Intro';
 import History from './History';
 import Join from './Join';
@@ -10,7 +10,7 @@ import DepartmentCard from './DepartmentCard';
 export default function About() {
 	return (
 		<div>
-			<HeroSection heroImage={guideHeroImage} title="关于CSSA" />
+			<HeroSection heroImage={aboutHeroImage} title="关于CSSA" />
 			<Intro />
 			<History />
 			<div className="departments-container">
