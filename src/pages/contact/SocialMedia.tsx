@@ -1,4 +1,4 @@
-import groupPhoto from '../../assets/group-photo-cropped.jpg';
+import groupPhoto from '../../assets/group-photo.jpg';
 
 export default function SocialMedia() {
     return (
