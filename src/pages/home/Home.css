@@ -106,7 +106,6 @@
   transform: translateX(-50%);
   font-size: 18px;
   line-height: 1.8;
-  font-family: "Helvetica";
   width: 435px;
 }
 
@@ -204,17 +203,80 @@
   gap: 2.5rem;
 }
 
-.event-image-wrapper {
-  overflow: hidden;
-  max-width: 100%;
+/* Event Flip Card Styles */
+.event-card-container {
+  background-color: transparent;
+  width: 100%;
+  aspect-ratio: 1/1; /* Enforce consistent aspect ratio */
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+.event-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.event-card-container:hover .event-card-inner {
+  transform: rotateY(180deg);
+}
+
+.event-card-front, .event-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  overflow: hidden; /* Ensure content respects border radius if applied */
+}
+
+.event-card-front {
+  background-color: #f0f0f0;
+}
+
+.event-card-back {
+  background-color: #8c1e1f;
+  color: white;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  box-sizing: border-box;
 }
 
 .event-image {
   width: 100%;
-  max-width: 100%;
-  height: auto;
-  object-fit: contain;
+  height: 100%;
+  object-fit: cover;
   display: block;
+}
+
+.event-card-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: white;
+}
+
+.event-card-button {
+  padding: 0.6rem 1.2rem;
+  background-color: white;
+  color: #8c1e1f;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+  display: inline-block;
+}
+
+.event-card-button:hover {
+  background-color: #f0f0f0;
 }
 
 .events-button {
@@ -223,6 +285,9 @@
   padding: 0.8rem 2rem;
   background-color: #8c1e1f;
   color: white;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
 }
 
 /* Responsive styles for events section */
@@ -262,4 +327,4 @@
     grid-template-columns: 1fr;
     gap: 0.75rem;
   }
-} 
+}
