@@ -20,6 +20,18 @@ button:hover {
     color: #8c1e1f;
 }
 
+button.disabled {
+    background-color: #cccccc;
+    border-color: #cccccc;
+    cursor: not-allowed;
+}
+
+button.disabled:hover {
+    background-color: #cccccc;
+    color: white;
+    border-color: #cccccc;
+}
+
 .upcoming-events-heading {
   margin-top: 3rem;
   text-align: center;

@@ -1,4 +1,5 @@
 import './Home.css'; // Importing from the styles folder
+import { useNavigate } from 'react-router-dom';
 
 // Importing images
 import cover2 from '../../assets/cover2.jpg';
@@ -26,6 +27,8 @@ const events: EventCard[] = [
 ];
 
 export default function Home () {
+  const navigate = useNavigate();
+
   return (
     <div className="home-container">
       {/* Hero Section with Background Image */}
@@ -85,7 +88,7 @@ export default function Home () {
             ))}
           </div>
         </div>
-        <button className="events-button">
+        <button className="events-button" onClick={() => navigate('/events')}>
           了解更多
         </button>
       </div>

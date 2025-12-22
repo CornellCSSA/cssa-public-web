@@ -19,7 +19,7 @@ export const upcomingEventData: UpcomingEventDataObject[] = [
     time: "2026 Spring",
     location: '线上',
     image: upcomingEventCP,
-    link: 'https://mp.weixin.qq.com/s/CKd95jWS3XJi8ow4kll02Q',
+    link: '#',
   },
 ];
 
