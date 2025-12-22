@@ -15,7 +15,7 @@ export default function UpcomingEventCard({ upcomingEventData }: { upcomingEvent
             <div className="upcoming-event-content">
                 <h3>{upcomingEventData.title}</h3>
                 <h5>{upcomingEventData.time}</h5>
-                <p>{upcomingEventData.location}</p>
+                <h5>{upcomingEventData.location}</h5>
                 <button 
                     className={`upcoming-event-button ${!isLinkAvailable ? 'disabled' : ''}`} 
                     onClick={() => isLinkAvailable && window.open(upcomingEventData.link, '_blank')}

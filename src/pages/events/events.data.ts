@@ -17,8 +17,8 @@ export const upcomingEventData: UpcomingEventDataObject[] = [
   },
   {
     title: '情人节限定！一周CP',
-    time: "2026 Spring",
-    location: '线上',
+    time: "2026/2",
+    location: '线上活动',
     image: upcomingEventCP,
     link: '#',
   },
