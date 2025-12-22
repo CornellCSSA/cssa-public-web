@@ -1,3 +1,4 @@
+import zhuxiImage from '../../assets/about-zhuxi.jpg';
 import xuanchuanImage from '../../assets/about-xuanchuan.jpg';
 import wailianImage from '../../assets/about-wailian.jpg';
 import neilianImage from '../../assets/about-neilian.jpg';
@@ -6,6 +7,11 @@ import mishuImage from '../../assets/about-mishu.jpg';
 import { DepartmentDataObject } from './departmentType';
 
 export const departmentsData: DepartmentDataObject[] = [
+    {
+        name: '主席机构',
+        image: zhuxiImage,
+        description: '主席机构是CSSA的领导核心，负责制定和执行CSSA的各项决策和计划，由主席、内务副主席、外务副主席组成，任期一年。',
+    },
     {
         name: '宣传部',
         image: xuanchuanImage,
