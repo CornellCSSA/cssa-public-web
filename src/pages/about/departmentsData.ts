@@ -20,7 +20,7 @@ export const departmentsData: DepartmentDataObject[] = [
     {
         name: '外联部',
         image: wailianImage,
-        description: '外联部是CSSA与外界沟通的窗口，负责大部分的对外交流合作。具体工作包括与各大赞助商以及战略合作伙伴对接，为CSSA提供主要的经济支持；与其他学联和企业沟通策划企校与校间活动，为同学们争取更多职业发展资源。',
+        description: '外联部是CSSA与外界沟通的窗口，负责与各大赞助商以及战略合作伙伴对接；与其他学联和企业沟通策划企校与校间活动，为同学们争取更多职业发展资源。',
     },
     {
         name: '内联部',
@@ -30,11 +30,11 @@ export const departmentsData: DepartmentDataObject[] = [
     {
         name: '财务部',
         image: caiwuImage,
-        description: '财务部掌管学联的财务大权。对内工作包括统筹规划并制定全年预算；规范管理CSSA财务帐号；审核各项财务开支并进行账务处理；负责各项财务凭证的整理和归档。对外工作包括募集筹措funding资金；完善funding申请白皮书；为赞助商出具invoice等。',
+        description: '财务部掌管学联的财务大权。对内工作包括统筹规划并制定全年预算；审核各项财务开支并进行账务处理。对外工作包括募集筹措funding资金；完善funding申请白皮书。',
     },
     {
         name: '秘书处',
         image: mishuImage,
-        description: '秘书处主要负责CSSA的日常事务并为其他部门提供技术支持。具体工作包括管理CSSA微信小助手账号、编写新生手册、组织新生接机、维护CSSA官网、群发邮件推送、整理CSSA章程、管理CSSA仓库、统筹安排CSSA日程和记录例会内容等。',
+        description: '秘书处主要负责CSSA的日常事务并为其他部门提供技术支持。具体工作包括管理CSSA微信小助手账号、维护CSSA官网、统筹安排CSSA日程和记录例会内容等。',
     }
 ];

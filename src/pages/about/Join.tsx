@@ -1,5 +1,6 @@
 import gongzhonghao from '../../assets/about-gongzhonghao-qr.png';
 import xiaozhushou from '../../assets/about-xiaozhushou-qr.png';
+import ImageWithLoader from '../../components/ImageWithLoader';
 
 export default function Join() {
     return (
@@ -22,9 +23,19 @@ export default function Join() {
                 </div>
                 <div className="contact-container">
                     <h4>CSSA公众号</h4>
-                    <img className="gongzhonghao-img" src={gongzhonghao} alt="CSSA公众号" />
+                    <ImageWithLoader 
+                        src={gongzhonghao} 
+                        alt="CSSA公众号" 
+                        className="gongzhonghao-img" 
+                        containerStyle={{ width: '90px', aspectRatio: '1/1', height: 'auto' }}
+                    />
                     <h4>CSSA小助手</h4>
-                    <img className="xiaozhushou-img" src={xiaozhushou} alt="CSSA小助手" />
+                    <ImageWithLoader 
+                        src={xiaozhushou} 
+                        alt="CSSA小助手" 
+                        className="xiaozhushou-img" 
+                        containerStyle={{ width: '160px', aspectRatio: '1/1', height: 'auto' }}
+                    />
                 </div>
             </div>
         </div>

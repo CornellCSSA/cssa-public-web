@@ -1,4 +1,5 @@
 import groupPhoto from '../../assets/group-photo.jpg';
+import ImageWithLoader from '../../components/ImageWithLoader';
 
 export default function SocialMedia() {
     return (
@@ -16,7 +17,12 @@ export default function SocialMedia() {
           </div>
 
           <div className="group-photo-container">
-            <img src={groupPhoto} alt="Group Photo" className="group-photo-img" />
+            <ImageWithLoader 
+                src={groupPhoto} 
+                alt="Group Photo" 
+                className="group-photo-img" 
+                containerStyle={{ aspectRatio: '16/9', height: 'auto' }}
+            />
           </div>
         </div>
       </div>

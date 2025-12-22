@@ -24,11 +24,14 @@ p {
     background-color: white;
 }
 
+.intro-image {
+    padding-top: 2rem;
+}
+
 .intro-image img {
     width: 480px;
     height: auto;
     object-fit: cover;
-    padding-top: 2rem;
 }
 
 .intro-content {

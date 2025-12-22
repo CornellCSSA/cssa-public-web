@@ -1,4 +1,5 @@
 import './HeroSection.css';
+import ImageWithLoader from './ImageWithLoader';
 
 interface HeroSectionProps {
   heroImage: string;
@@ -10,7 +11,7 @@ export default function HeroSection({ heroImage, title, imageAlt = 'Hero' }: Her
   return (
     <div className="hero-section-container">
       <div className="hero-background">
-        <img src={heroImage} alt={imageAlt} className="hero-img" />
+        <ImageWithLoader src={heroImage} alt={imageAlt} className="hero-img" />
       </div>
       <div className="hero-content">
         <h1 className="hero-title">{title}</h1>

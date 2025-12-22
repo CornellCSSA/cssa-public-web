@@ -1,5 +1,6 @@
 import './Home.css'; // Importing from the styles folder
 import { useNavigate } from 'react-router-dom';
+import ImageWithLoader from '../../components/ImageWithLoader';
 
 // Importing images
 import cover2 from '../../assets/cover2.jpg';
@@ -34,7 +35,7 @@ export default function Home () {
       {/* Hero Section with Background Image */}
       <div className="hero-section">
         <div className="home-hero-background">
-          <img src={cover2} alt="Cover" className="cover-img" />
+          <ImageWithLoader src={cover2} alt="Cover" className="cover-img" />
         </div>
         <div className="hero-content">
           <h1 className="hero-title-chinese">康奈尔大学中国学生学者联合会</h1>
@@ -74,7 +75,7 @@ export default function Home () {
                 <div className="event-card-inner">
                   {/* Front of the card */}
                   <div className="event-card-front">
-                    <img src={event.image} alt={event.title} className="event-image" />
+                    <ImageWithLoader src={event.image} alt={event.title} className="event-image" />
                   </div>
                   {/* Back of the card */}
                   <div className="event-card-back">

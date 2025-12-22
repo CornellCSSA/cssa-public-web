@@ -1,5 +1,6 @@
 import './About.css';
 import historyImage from '../../assets/about-history.jpg';
+import ImageWithLoader from '../../components/ImageWithLoader';
 
 export default function History() {
     return (
@@ -47,7 +48,11 @@ export default function History() {
                     </div>
                 </div>
                 <div className="history-image">
-                    <img src={historyImage} alt="CSSA历史" />
+                    <ImageWithLoader 
+                        src={historyImage} 
+                        alt="CSSA历史" 
+                        containerStyle={{ width: '420px', aspectRatio: '4/3', height: 'auto' }}
+                    />
                 </div>
             </div>
         </div>

@@ -1,4 +1,5 @@
 import { EventDataObject } from './event.type';
+import ImageWithLoader from '../../components/ImageWithLoader';
 
 export default function EventCard({ eventData }: { eventData: EventDataObject }) {
   return (
@@ -9,7 +10,12 @@ export default function EventCard({ eventData }: { eventData: EventDataObject })
             <p className="event-description">{eventData.description}</p>
             <button className="event-button" onClick={() => window.open(eventData.link, '_blank')}>往期回顾</button>
         </div>
-        <img src={eventData.image} alt={eventData.title} className="event-image" />
+        <ImageWithLoader 
+            src={eventData.image} 
+            alt={eventData.title} 
+            className="event-image" 
+            containerStyle={{ width: '480px', height: '310px', flexShrink: 0 }}
+        />
     </div>
   );
 }

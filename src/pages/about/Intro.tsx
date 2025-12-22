@@ -1,12 +1,17 @@
 import './About.css';
 import groupPhoto from '../../assets/group-photo.jpg';
+import ImageWithLoader from '../../components/ImageWithLoader';
 
 export default function Intro() {
     return (
         <div>
             <div className="intro-container">
                 <div className="intro-image">
-                    <img src={groupPhoto} alt="CSSA简介" />
+                    <ImageWithLoader 
+                        src={groupPhoto} 
+                        alt="CSSA简介" 
+                        containerStyle={{ width: '480px', aspectRatio: '4/3', height: 'auto' }}
+                    />
                 </div>
                 <div className="intro-content">
                     <h2 className="intro-heading">CSSA简介</h2>
