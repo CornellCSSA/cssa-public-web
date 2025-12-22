@@ -1,6 +1,7 @@
 import upcomingEventChunwan from '../../assets/events-upcoming-chunwan.jpg';
 import eventsZhongqiu from '../../assets/events-zhongqiu.jpeg';
 import eventsHaoshengyin from '../../assets/events-haoshengyin.jpeg';
+import eventsChunwan from '../../assets/events-chunwan.jpg';
 import eventsYundongji from '../../assets/events-yundongji.jpg';
 import upcomingEventCP from '../../assets/events-CP.png';
 import eventsXinsheng from '../../assets/events-xinsheng.jpg';
@@ -41,11 +42,19 @@ export const eventsData: EventDataObject[] = [
     link: 'http://xhslink.com/o/9DfQ1zTo88c',
   },
   {
+    title: '春晚',
+    time: "2月左右",
+    description: '春晚是康村每年最为热闹的大型晚会。CSSA用自己的春晚将我们康村华人大家庭聚集在一起，为大家带来“传统与现代结合，东方与西方碰撞”的文化盛宴，让大家在异国他乡开开心心过大年。',
+    image: eventsChunwan,
+    orientation: 'left',
+    link: 'https://mp.weixin.qq.com/s/_0rCBHrL8SIHFgrnPPDwAg',
+  },
+  {
     title: '运动季',
     time: "3-5月",
     description: 'CSSA的运动季包括足球、篮球、羽毛球、乒乓球、电竞等各类项目，旨在为同学们提供一个锻炼身体、增进友谊的平台。期待与大家在美好的春天里一起挥洒汗水，共享运动的无限乐趣！',
     image: eventsYundongji,
-    orientation: 'left',
+    orientation: 'right',
     link: 'https://mp.weixin.qq.com/s/CJjMq4MCUNfU2NrMsJXm3w',
   },
   {
@@ -53,7 +62,7 @@ export const eventsData: EventDataObject[] = [
     time: "7月",
     description: 'CSSA 每年暑期都会举办热闹的新生见面会，带着满满的欢迎气息，帮助新同学们更快融入康村、交到新朋友。现场不仅有学长学姐们耐心、真诚的问答交流，大家还会一起聊选课攻略、抢热门课的小技巧、以及各种社团的精彩安利。',
     image: eventsXinsheng,
-    orientation: 'right',
+    orientation: 'left',
     link: 'https://mp.weixin.qq.com/s/OhopG7Us-s9E_NYsf6Q0RA',
   },
 ];
