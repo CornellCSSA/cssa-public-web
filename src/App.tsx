@@ -5,11 +5,13 @@ import Guide from './pages/guide/Guide';
 import Events from './pages/events/Events';
 import Contact from './pages/contact/Contact';
 import About from './pages/about/About';
+import ScrollToTop from './components/ScrollToTop';
 import './App.css';
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <MainLayout>
         <Routes>
           <Route path="/" element={<Home />} />

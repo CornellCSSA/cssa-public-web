@@ -13,7 +13,12 @@ export default function Join() {
                     <p>
                         CSSA招新信息预计于每年8月发布，有意向的同学敬请关注Cornell CSSA微信公众号并积极参与新生见面会等活动。如有问题欢迎联系CSSA微信小助手
                     </p>
-                    <button className="join-button">了解更多</button>
+                    <button 
+                        className="join-button"
+                        onClick={() => window.open('https://mp.weixin.qq.com/s/qhDfrZjF_ApcIXr3RCyc9A', '_blank', 'noopener,noreferrer')}
+                    >
+                        了解更多
+                    </button>
                 </div>
                 <div className="contact-container">
                     <h4>CSSA公众号</h4>
