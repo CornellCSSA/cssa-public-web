@@ -5,10 +5,22 @@
     margin-top: 3rem;
 }
 
+.guide-download-link {
+    display: block;
+    width: fit-content;
+    margin: 0 auto; /* Centers the link element */
+    margin-bottom: 3rem;
+}
+
 .guide-cover-img {
     width: 400px; /* 图片的宽度 */
     height: auto; /* 自适应高度 */
-    display: block; /* 块级元素（只有加上这一条才能用下面的居中）*/
-    margin: 0 auto; /* 居中 */
-    margin-bottom: 3rem; /* 下边距 */
+    display: block; /* 块级元素 */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.guide-cover-img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    cursor: pointer;
 }
