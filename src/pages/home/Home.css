@@ -16,12 +16,37 @@
   object-fit: cover;
 }
 
+.home-hero-background::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* Darken the hero image */
+  z-index: 1; /* Overlay stays on top of images */
+}
+
 /* Cover image styles */
+.hero-image-container {
+  position: absolute !important; /* Force override of component inline styles if needed */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0; /* Hide by default */
+  transition: opacity 1.5s ease-in-out; /* Smooth cross-fade transition */
+  z-index: 0;
+}
+
+.hero-image-container.active {
+  opacity: 1; /* Show active image */
+}
+
 .cover-img {
   width: 100%;
   height: 90vh;
   object-fit: cover;
-  filter: brightness(0.75); /* Slightly darken the image */
 }
 
 /* Content overlay styles */
@@ -35,6 +60,7 @@
   max-width: 1200px;
   color: white;
   z-index: 2;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow for better readability */
 }
 
 /* Chinese title styles */
@@ -273,10 +299,18 @@
   border-radius: 4px;
   transition: background-color 0.2s;
   display: inline-block;
+  border: none;
+  cursor: pointer;
 }
 
-.event-card-button:hover {
+.event-card-button:hover:not(.disabled) {
   background-color: #f0f0f0;
+}
+
+.event-card-button.disabled {
+  background-color: #cccccc;
+  color: #666666;
+  cursor: not-allowed;
 }
 
 .events-button {

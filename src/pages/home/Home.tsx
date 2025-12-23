@@ -1,14 +1,17 @@
 import './Home.css'; // Importing from the styles folder
 import { useNavigate } from 'react-router-dom';
+import { useState, useEffect } from 'react';
 import ImageWithLoader from '../../components/ImageWithLoader';
 
 // Importing images
-import cover2 from '../../assets/cover2.jpg';
+import cover1 from '../../assets/cover1.jpg';
+import cover2 from '../../assets/cover2.png';
+import cover3 from '../../assets/cover3.png';
 import homeEvent1 from '../../assets/home-events-1.jpg';
 import homeEvent2 from '../../assets/home-events-2.jpg';
 import homeEvent3 from '../../assets/home-events-3.jpg';
 import homeEvent4 from '../../assets/home-events-4.jpg';
-import homeEvent5 from '../../assets/home-events-5.jpg';
+import homeEvent5 from '../../assets/home-events-5.jpeg';
 import homeEvent6 from '../../assets/home-events-6.jpg';
 
 interface EventCard {
@@ -24,18 +27,37 @@ const events: EventCard[] = [
   { id: 3, image: homeEvent3, title: '春晚', link: 'https://mp.weixin.qq.com/s/_0rCBHrL8SIHFgrnPPDwAg' },
   { id: 4, image: homeEvent4, title: '运动季', link: 'https://mp.weixin.qq.com/s/CJjMq4MCUNfU2NrMsJXm3w' },
   { id: 5, image: homeEvent5, title: '康村好声音', link: 'https://mp.weixin.qq.com/s/QYtnHw7qfHKkWdQAD-qt9A' },
-  { id: 6, image: homeEvent6, title: '一周CP', link: 'https://mp.weixin.qq.com/s/2rvSOxCezqsG-8XQK3zVKA' },
+  { id: 6, image: homeEvent6, title: '新生接机', link: '#' },
 ];
+
+const heroImages = [cover1, cover2, cover3];
 
 export default function Home () {
   const navigate = useNavigate();
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % heroImages.length);
+    }, 5000);
+
+    return () => clearInterval(timer);
+  }, []);
 
   return (
     <div className="home-container">
       {/* Hero Section with Background Image */}
       <div className="hero-section">
         <div className="home-hero-background">
-          <ImageWithLoader src={cover2} alt="Cover" className="cover-img" />
+          {heroImages.map((image, index) => (
+            <ImageWithLoader
+              key={index}
+              src={image}
+              alt={`Cover ${index + 1}`}
+              containerClassName={`hero-image-container ${index === currentImageIndex ? 'active' : ''}`}
+              className="cover-img"
+            />
+          ))}
         </div>
         <div className="hero-content">
           <h1 className="hero-title-chinese">康奈尔大学中国学生学者联合会</h1>
@@ -80,9 +102,15 @@ export default function Home () {
                   {/* Back of the card */}
                   <div className="event-card-back">
                     <h3 className="event-card-title">{event.title}</h3>
-                    <a href={event.link} className="event-card-button" target="_blank" rel="noopener noreferrer">
-                      往期回顾
-                    </a>
+                    {event.link && event.link !== '#' ? (
+                      <a href={event.link} className="event-card-button" target="_blank" rel="noopener noreferrer">
+                        往期回顾
+                      </a>
+                    ) : (
+                      <button className="event-card-button disabled" disabled>
+                        敬请期待
+                      </button>
+                    )}
                   </div>
                 </div>
               </div>
