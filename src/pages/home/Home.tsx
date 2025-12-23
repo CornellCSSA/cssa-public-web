@@ -60,7 +60,7 @@ export default function Home () {
             />
           ))}
         </div>
-        <div className="hero-content">
+        <div className="home-hero-content">
           <h1 className="hero-title-chinese">康奈尔大学中国学生学者联合会</h1>
           <h2 className="hero-title-english">Cornell CSSA</h2>
           <p className="hero-subtitle">Cornell Chinese Students and Scholars Association</p>
