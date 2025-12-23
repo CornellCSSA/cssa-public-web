@@ -18,7 +18,6 @@ export default function Guide() {
             src={guideCover} 
             alt="Guide Cover" 
             className="guide-cover-img" 
-            containerStyle={{ width: '400px', display: 'block', aspectRatio: '0.75', height: 'auto' }}
           />
         </a>
       </div>

@@ -132,52 +132,7 @@
   transform: translateX(-50%);
   font-size: 18px;
   line-height: 1.8;
-  width: 435px;
-}
-
-/* Responsive styles */
-@media (max-width: 768px) {
-  .hero-title-chinese {
-    font-size: 2.5rem;
-  }
-
-  .hero-title-english {
-    font-size: 3.5rem;
-  }
-
-  .hero-subtitle {
-    font-size: 1.2rem;
-  }
-
-  .about-section {
-    flex-direction: column;
-  }
-
-  .about-title, .about-content {
-    height: 50vh;
-  }
-
-  .about-title-text, .about-content-text {
-    left: 50%;
-  }
-}
-
-@media (max-width: 480px) {
-  .hero-title-chinese {
-    font-size: 2rem;
-  }
-
-  .hero-title-english {
-    font-size: 2.8rem;
-  }
-
-  .hero-subtitle {
-    font-size: 1rem;
-  }
-
-  .about-title-text {
-    font-size: 2rem;
-  }
+  max-width: 435px;
 }
 
 /* Events section styles */
@@ -345,6 +300,13 @@
   margin: 0;
 }
 
+.guide-text-description {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #333;
+  margin: 0;
+}
+
 .guide-button {
   background-color: white;
   border: 1px solid #8c1e1f;
@@ -363,14 +325,79 @@
   color: white;
 }
 
+.guide-cover-wrapper {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .guide-cover {
   width: 350px;
   height: auto;
   display: block;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
-/* Responsive styles for events section */
+/* Responsive styles */
+@media (max-width: 1024px) {
+  .guide-section {
+    gap: 80px;
+    padding: 60px 40px;
+  }
+}
+
 @media (max-width: 768px) {
+  .hero-section {
+    height: 80vh;
+  }
+
+  .hero-content {
+    left: 50%;
+    text-align: left;
+  }
+
+  .hero-title-chinese {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+  .hero-title-english {
+    font-size: 1.5rem;
+    line-height: 1.2;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+
+  .about-section {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .about-title, .about-content {
+    height: auto;
+    padding: 3rem 1.5rem;
+  }
+
+  .about-title-text, .about-content-text {
+    left: 0;
+    transform: none;
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .about-title-text {
+    font-size: 2rem;
+  }
+
+  .about-content-text {
+    font-size: 16px;
+  }
+
   .events-section {
     padding: 3rem 1.5rem;
   }
@@ -385,11 +412,67 @@
 
   .events-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
+    gap: 1.5rem;
+  }
+
+  .guide-section {
+    flex-direction: column-reverse; /* Put image on top or text? Usually text on top. Let's use column. */
+    flex-direction: column;
+    gap: 40px;
+    padding: 50px 20px;
+    text-align: center;
+  }
+
+  .guide-text {
+    text-align: center;
+    align-items: center;
+    max-width: 100%;
+  }
+
+  .guide-text-title {
+    font-size: 2rem;
+  }
+
+  .guide-text-description {
+    font-size: 16px;
+    padding: 0 10px;
+  }
+
+  .guide-cover-wrapper {
+    width: 100%;
+  }
+
+  .guide-cover-container {
+    width: 80% !important;
+    max-width: 300px !important;
+    height: auto !important;
+    margin: 0 auto;
+  }
+
+  .guide-cover {
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0;
   }
 }
 
 @media (max-width: 480px) {
+  .hero-title-chinese {
+    font-size: 1.8rem;
+  }
+
+  .hero-title-english {
+    font-size: 1.3rem;
+  }
+
+  .hero-subtitle {
+    font-size: 0.8rem;
+  }
+
+  .about-title-text {
+    font-size: 1.75rem;
+  }
+
   .events-section {
     padding: 2rem 1rem;
   }
@@ -404,6 +487,18 @@
 
   .events-grid {
     grid-template-columns: 1fr;
-    gap: 0.75rem;
+    gap: 1rem;
+  }
+
+  .guide-section {
+    padding: 40px 15px;
+  }
+
+  .guide-text-title {
+    font-size: 1.75rem;
+  }
+
+  .guide-cover {
+    width: 90%;
   }
 }

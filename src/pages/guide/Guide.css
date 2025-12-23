@@ -17,10 +17,39 @@
 }
 
 .guide-cover-img {
-    width: 400px; /* 图片的宽度 */
-    height: auto; /* 自适应高度 */
-    display: block; /* 块级元素 */
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    aspect-ratio: 0.75;
+    display: block;
+    margin: 0 auto;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+@media screen and (max-width: 768px) {
+    .guide-heading {
+        font-size: 32px;
+        margin-top: 2rem;
+    }
+
+    .guide-container p {
+        padding: 0 20px;
+        font-size: 16px;
+    }
+
+    .guide-cover-img {
+        max-width: 300px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .guide-heading {
+        font-size: 24px;
+    }
+
+    .guide-cover-img {
+        max-width: 280px;
+    }
 }
 
 .guide-cover-img:hover {
