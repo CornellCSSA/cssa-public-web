@@ -3,6 +3,12 @@ body {
   font-family: "Times New Roman", Times, serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: white;
+  color: black;
+}
+
+:root {
+  color-scheme: light;
 }
 
 code {
