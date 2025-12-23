@@ -11,7 +11,6 @@ button {
     color: white;
     border: none;
     padding: 0.6rem 2.2rem;
-    cursor: pointer;
 }
 
 button:hover {
@@ -23,7 +22,6 @@ button:hover {
 button.disabled {
     background-color: #cccccc;
     border-color: #cccccc;
-    cursor: not-allowed;
 }
 
 button.disabled:hover {

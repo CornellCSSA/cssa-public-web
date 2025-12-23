@@ -13,3 +13,15 @@ code {
 * {
   box-sizing: border-box;
 }
+
+button, 
+input[type="button"], 
+input[type="submit"], 
+input[type="reset"] {
+  cursor: pointer;
+}
+
+button:disabled,
+button.disabled {
+  cursor: not-allowed;
+}

@@ -13,6 +13,7 @@ import homeEvent3 from '../../assets/home-events-3.jpg';
 import homeEvent4 from '../../assets/home-events-4.jpg';
 import homeEvent5 from '../../assets/home-events-5.jpeg';
 import homeEvent6 from '../../assets/home-events-6.jpg';
+import guideCover from '../../assets/guide.jpg';
 
 interface EventCard {
   id: number;
@@ -120,6 +121,29 @@ export default function Home () {
         <button className="events-button" onClick={() => navigate('/events')}>
           了解更多
         </button>
+      </div>
+      <div className="guide-section">
+        <div className="guide-text">
+          <h1 className='guide-text-title'>新生手册</h1>
+          <p className='guide-text-description'>
+            为了帮助刚来到康奈尔的同学尽快适应这里的生活，Cornell CSSA编写整理了新生手册，涵盖了衣、食、住、行、学各方面的指南和攻略，希望对大家有所帮助！
+          </p>
+          <a 
+            href="/files/2024版CSSA新生手册.pdf" 
+            download="2024版CSSA新生手册.pdf" 
+            className='guide-button'
+          >
+            点击下载
+          </a>
+        </div>
+        <div className="guide-cover-wrapper">
+          <ImageWithLoader 
+            src={guideCover} 
+            alt="Guide Cover" 
+            className="guide-cover" 
+            containerClassName="guide-cover-container"
+          />
+        </div>
       </div>
     </div>
   );

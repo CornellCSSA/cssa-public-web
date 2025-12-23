@@ -235,7 +235,6 @@
   width: 100%;
   aspect-ratio: 1/1; /* Enforce consistent aspect ratio */
   perspective: 1000px;
-  cursor: pointer;
 }
 
 .event-card-inner {
@@ -296,11 +295,9 @@
   color: #8c1e1f;
   text-decoration: none;
   font-weight: 600;
-  border-radius: 4px;
   transition: background-color 0.2s;
   display: inline-block;
   border: none;
-  cursor: pointer;
 }
 
 .event-card-button:hover:not(.disabled) {
@@ -308,9 +305,8 @@
 }
 
 .event-card-button.disabled {
-  background-color: #cccccc;
+  background-color: #f0f0f0;
   color: #666666;
-  cursor: not-allowed;
 }
 
 .events-button {
@@ -321,7 +317,56 @@
   color: white;
   border: none;
   font-size: 1rem;
-  cursor: pointer;
+}
+
+.guide-section {
+  display: flex;
+  flex-direction: row;
+  background-color: #f5f5f5;
+  width: 100%;
+  padding: 60px 0 80px 0;
+  align-items: center;
+  justify-content: center;
+  gap: 180px;
+}
+
+.guide-text {
+  max-width: 450px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.guide-text-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #8c1e1f;
+  margin: 0;
+}
+
+.guide-button {
+  background-color: white;
+  border: 1px solid #8c1e1f;
+  width: 140px;
+  padding: 10px 0;
+  color: #8c1e1f;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+}
+
+.guide-button:hover {
+  background-color: #8c1e1f;
+  color: white;
+}
+
+.guide-cover {
+  width: 350px;
+  height: auto;
+  display: block;
 }
 
 /* Responsive styles for events section */
