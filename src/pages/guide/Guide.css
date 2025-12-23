@@ -5,6 +5,10 @@
     margin-top: 3rem;
 }
 
+.guide-container p {
+    text-align: center;
+}
+
 .guide-download-link {
     display: block;
     width: fit-content;
