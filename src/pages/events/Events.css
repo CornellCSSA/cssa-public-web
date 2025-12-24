@@ -246,7 +246,11 @@ button.disabled:hover {
   }
 
   .event-card h3 {
-    font-size: 28px;
+    font-size: 24px;
+  }
+
+  .event-card h5 {
+    font-size: 16px;
   }
 
   .event-description {
@@ -262,13 +266,5 @@ button.disabled:hover {
   .upcoming-event-card {
     width: 80%;
     max-width: 300px;
-  }
-
-  .upcoming-event-card h3 {
-    font-size: 20px;
-  }
-
-  .event-card h3 {
-    font-size: 24px;
   }
 }

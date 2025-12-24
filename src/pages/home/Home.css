@@ -394,7 +394,7 @@
   .about-title-text {
     color: #8c1e1f;
     padding-right: 0;
-    font-size: 2rem;
+    font-size: 32px;
   }
 
   .about-content {
@@ -412,7 +412,7 @@
   }
 
   .events-title-text {
-    font-size: 2rem;
+    font-size: 32px;
   }
 
   .events-content-text {
@@ -439,7 +439,7 @@
   }
 
   .guide-text-title {
-    font-size: 2rem;
+    font-size: 32px;
   }
 
   .guide-text-description {
@@ -471,7 +471,7 @@
   }
 
   .about-title-text {
-    font-size: 1.75rem;
+    font-size: 28px;
   }
 
   .events-section {
@@ -479,11 +479,11 @@
   }
 
   .events-title-text {
-    font-size: 1.75rem;
+    font-size: 28px;
   }
 
   .events-content-text {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .events-grid {
@@ -496,7 +496,7 @@
   }
 
   .guide-text-title {
-    font-size: 1.75rem;
+    font-size: 28px;
   }
 
   .guide-cover {
