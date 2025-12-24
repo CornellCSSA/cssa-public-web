@@ -11,7 +11,7 @@ export default function Support() {
             src={wechatCode} 
             alt="QR code" 
             className="wechatCode-img" 
-            containerStyle={{ width: '200px', aspectRatio: '1/1', margin: '2rem auto 0 auto', height: 'auto' }}
+            containerClassName="wechat-qr-container"
         />
       </div>
     );

@@ -3,7 +3,7 @@
     background: #8c1e1f;
     padding: 60px;
     box-sizing: border-box;
-  }
+}
 
 .social-media-container {
     display: flex;
@@ -14,19 +14,23 @@
     width: 100%;
     max-width: 1400px;
     background-color: white;
+    overflow: hidden;
 }
 
 .social-media-content {
-    padding-left: 10rem;
+    flex: 1;
+    padding: 3rem 4rem 3rem 10rem;
 }
 
 .social-media-container h2 {
     font-size: 40px;
     color: #8c1e1f;
+    margin-top: 0;
 }
 
 .social-media-content p {
-    margin: 0.5rem 0;
+    margin: 0.8rem 0;
+    font-size: 18px;
 }
 
 .social-label {
@@ -40,6 +44,11 @@
     flex-shrink: 0;
 }
 
+.social-group-photo-container {
+    width: 100% !important;
+    height: auto !important;
+}
+
 .group-photo-container::after {
     content: '';
     position: absolute;
@@ -49,15 +58,17 @@
     height: 100%;
     background-color: rgba(140, 30, 31, 0.2);
     pointer-events: none;
+    z-index: 1;
 }
 
 .group-photo-img {
     width: 100%;
-    height: auto;
-    object-fit: contain;
+    height: 100%;
+    object-fit: cover;
     display: block;
 }
 
+/* Support Section */
 .support-content {
     font-size: 20px;
     color: #000000;
@@ -75,9 +86,82 @@
     font-weight: bold;
 }
 
-.wechatCode-img {
-    width: 200px;
-    height: auto;
-    display: block;
+.wechat-qr-container {
+    width: 200px !important;
+    aspect-ratio: 1/1;
     margin: 2rem auto 0 auto;
+    height: auto !important;
+}
+
+.wechatCode-img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: contain;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .social-media-content {
+        padding-left: 4rem;
+    }
+    
+    .group-photo-container {
+        width: 50%;
+    }
+}
+
+@media (max-width: 900px) {
+    .social-media-frame {
+        padding: 30px;
+    }
+
+    .social-media-container {
+        flex-direction: column-reverse;
+    }
+
+    .group-photo-container {
+        width: 100%;
+    }
+
+    .social-media-content {
+        padding: 3rem 2rem;
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    .social-media-container h2 {
+        font-size: 32px;
+    }
+
+    .social-media-content p {
+        font-size: 16px;
+    }
+
+    .contact-heading {
+        font-size: 32px;
+    }
+
+    .support-content p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .social-media-frame {
+        padding: 15px;
+    }
+
+    .social-media-content {
+        padding: 2rem 1.5rem;
+    }
+
+    .social-media-container h2, .contact-heading {
+        font-size: 28px;
+    }
+
+    .social-media-content p, .support-content p {
+        font-size: 16px;
+    }
 }

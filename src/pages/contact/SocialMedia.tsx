@@ -21,7 +21,7 @@ export default function SocialMedia() {
                 src={groupPhoto} 
                 alt="Group Photo" 
                 className="group-photo-img" 
-                containerStyle={{ aspectRatio: '16/9', height: 'auto' }}
+                containerClassName="social-group-photo-container"
             />
           </div>
         </div>
