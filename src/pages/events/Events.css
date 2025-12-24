@@ -166,13 +166,15 @@ button.disabled:hover {
 
 @media (max-width: 1024px) {
   .event-card {
+    height: auto;
     padding: 2rem;
     gap: 2rem;
+    align-items: center;
   }
   
-  .event-card img {
-    width: 40%;
-    height: auto;
+  .event-image-container {
+    width: 40% !important;
+    height: auto !important;
   }
 }
 
