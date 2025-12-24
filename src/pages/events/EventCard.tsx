@@ -14,7 +14,7 @@ export default function EventCard({ eventData }: { eventData: EventDataObject })
             src={eventData.image} 
             alt={eventData.title} 
             className="event-image" 
-            containerStyle={{ width: '480px', height: '310px', flexShrink: 0 }}
+            containerClassName="event-image-container"
         />
     </div>
   );

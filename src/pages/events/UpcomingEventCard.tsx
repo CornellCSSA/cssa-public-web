@@ -10,7 +10,7 @@ export default function UpcomingEventCard({ upcomingEventData }: { upcomingEvent
                 src={upcomingEventData.image} 
                 alt={upcomingEventData.title} 
                 className="upcoming-event-image" 
-                containerStyle={{ width: '280px', height: '280px', flexShrink: 0 }}
+                containerClassName="upcoming-event-image-container"
             />
             <div className="upcoming-event-content">
                 <h3>{upcomingEventData.title}</h3>
