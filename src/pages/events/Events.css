@@ -249,6 +249,10 @@ button.disabled:hover {
     font-size: 28px;
   }
 
+  .event-description {
+    text-align: left;
+  }
+
   .event-button {
     margin-top: 1rem;
   }

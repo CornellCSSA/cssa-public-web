@@ -309,9 +309,7 @@ p {
     }
 
     .contact-container {
-        width: 100%;
-        height: auto;
-        padding: 3rem 1rem;
+        display: none;
     }
 
     .join-outer-container, .history-outer-container {
