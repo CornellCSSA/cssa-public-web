@@ -51,7 +51,7 @@ export default function History() {
                     <ImageWithLoader 
                         src={historyImage} 
                         alt="CSSA历史" 
-                        containerStyle={{ width: '420px', aspectRatio: '4/3', height: 'auto' }}
+                        containerClassName="history-image-container"
                     />
                 </div>
             </div>

@@ -8,7 +8,7 @@ export default function DepartmentCard({ departmentData }: { departmentData: Dep
                 src={departmentData.image} 
                 alt={departmentData.name} 
                 className="department-image" 
-                containerStyle={{ width: '400px', aspectRatio: '4/3', height: 'auto' }}
+                containerClassName="department-image-container"
             />
             <div className="department-content">
                 <h3 className="department-name">{departmentData.name}</h3>

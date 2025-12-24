@@ -27,14 +27,14 @@ export default function Join() {
                         src={gongzhonghao} 
                         alt="CSSA公众号" 
                         className="gongzhonghao-img" 
-                        containerStyle={{ width: '90px', aspectRatio: '1/1', height: 'auto' }}
+                        containerClassName="qr-container-gongzhonghao"
                     />
                     <h4>CSSA小助手</h4>
                     <ImageWithLoader 
                         src={xiaozhushou} 
                         alt="CSSA小助手" 
                         className="xiaozhushou-img" 
-                        containerStyle={{ width: '160px', aspectRatio: '1/1', height: 'auto' }}
+                        containerClassName="qr-container-xiaozhushou"
                     />
                 </div>
             </div>
