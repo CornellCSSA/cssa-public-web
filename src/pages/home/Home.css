@@ -108,6 +108,14 @@
   padding: 2rem;
 }
 
+.about-title-text {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: white;
+  padding-right: 8rem;
+  margin: 0 auto;
+}
+
 .about-content {
   flex: 1;
   display: flex;
@@ -116,22 +124,10 @@
   background-color: #F5F5F5;
 }
 
-.about-title-text {
-  position: relative;
-  left: 40%;
-  transform: translateX(-50%);
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: white;
-}
-
 .about-content-text {
-  position: relative;
-  left: 35%;
-  transform: translateX(-50%);
-  font-size: 18px;
   line-height: 1.8;
   max-width: 435px;
+  padding-left: 2rem;
 }
 
 /* Events section styles */
@@ -366,49 +362,48 @@
 }
 
 @media (max-width: 768px) {
-  .hero-section {
-    height: 80vh;
-  }
-
   .home-hero-content {
     width: 80%;
   }
 
   .hero-title-chinese {
-    font-size: 2rem;
+    display: none;
   }
 
   .hero-title-english {
-    font-size: 1.5rem;
+    font-size: 3rem;
+    text-align: center;
   }
 
   .hero-subtitle {
-    font-size: 1rem;
+    display: none;
   }
 
   .about-section {
     flex-direction: column;
     height: auto;
+    padding: 4rem 0;
+    background-color: #f5f5f5;
   }
 
-  .about-title, .about-content {
-    height: auto;
-    padding: 3rem 1.5rem;
-  }
-
-  .about-title-text, .about-content-text {
-    left: 0;
-    transform: none;
-    text-align: center;
-    width: 100%;
-    max-width: 100%;
+  .about-title {
+    background-color: #f5f5f5;
+    
   }
 
   .about-title-text {
+    color: #8c1e1f;
+    padding-right: 0;
     font-size: 2rem;
   }
 
+  .about-content {
+    padding: 0;
+  }
+
   .about-content-text {
+    padding-left: 0;
+    margin: 0 auto;
     font-size: 16px;
   }
 
@@ -422,6 +417,7 @@
 
   .events-content-text {
     font-size: 16px;
+    text-align: left;
   }
 
   .events-grid {
@@ -430,15 +426,14 @@
   }
 
   .guide-section {
-    flex-direction: column-reverse; /* Put image on top or text? Usually text on top. Let's use column. */
-    flex-direction: column;
+    flex-direction: column-reverse;
     gap: 40px;
     padding: 50px 20px;
     text-align: center;
   }
 
   .guide-text {
-    text-align: center;
+    text-align: left;
     align-items: center;
     max-width: 100%;
   }
@@ -471,16 +466,8 @@
 }
 
 @media (max-width: 480px) {
-  .hero-title-chinese {
-    font-size: 1.8rem;
-  }
-
   .hero-title-english {
-    font-size: 1.3rem;
-  }
-
-  .hero-subtitle {
-    font-size: 0.8rem;
+    font-size: 2.2rem;
   }
 
   .about-title-text {
