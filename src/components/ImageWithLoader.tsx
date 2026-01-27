@@ -55,6 +55,7 @@ export default function ImageWithLoader({
                     display: 'block' // Ensures no extra space below inline images
                 }}
                 onLoad={handleLoad}
+                alt={'Image'}
                 {...props}
             />
         </div>
