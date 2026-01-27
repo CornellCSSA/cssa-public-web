@@ -373,6 +373,7 @@
   .hero-title-english {
     font-size: 3rem;
     text-align: center;
+    padding-bottom: 80px;
   }
 
   .hero-subtitle {
@@ -467,11 +468,15 @@
 
 @media (max-width: 480px) {
   .hero-title-english {
-    font-size: 2.2rem;
+    font-size: 2.8rem;
   }
 
   .about-title-text {
     font-size: 28px;
+  }
+
+  .about-content-text {
+    padding: 0 10px;
   }
 
   .events-section {
