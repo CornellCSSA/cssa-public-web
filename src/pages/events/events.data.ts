@@ -3,24 +3,17 @@ import eventsZhongqiu from '../../assets/events-zhongqiu.jpeg';
 import eventsHaoshengyin from '../../assets/events-haoshengyin.jpeg';
 import eventsChunwan from '../../assets/events-chunwan.jpg';
 import eventsYundongji from '../../assets/events-yundongji.jpg';
-import upcomingEventCP from '../../assets/events-CP.png';
+import upcomingEventWolf from '../../assets/events-wolf.jpg';
 import eventsXinsheng from '../../assets/events-xinsheng.jpg';
 import { EventDataObject, UpcomingEventDataObject } from './event.type';
 
 export const upcomingEventData: UpcomingEventDataObject[] = [
   {
-    title: 'CSSA 2026 马年春晚',
-    time: "2026/1/31",
-    location: 'Bailey Hall',
-    image: upcomingEventChunwan,
-    link: 'https://vivenu.com/event/2026-cornell-cssa-year-of-the-horse-spring-festi-1wabvf',
-  },
-  {
-    title: '情人节限定！一周CP',
-    time: "2026/2",
-    location: '线上活动',
-    image: upcomingEventCP,
-    link: 'https://mp.weixin.qq.com/s/52JTeLH6WdwR3wb3gd3_WQ',
+    title: '狼人杀 & 阿瓦隆大赛',
+    time: "2026/3/7",
+    location: 'Uris Hall 301',
+    image: upcomingEventWolf,
+    link: 'https://docs.google.com/forms/d/e/1FAIpQLSdWkfaI0CU5y2AmMOD9iH1Us7iz8ODRWy1zkkMn39avbRFbfw/viewform?usp=publish-editor',
   },
 ];
 
