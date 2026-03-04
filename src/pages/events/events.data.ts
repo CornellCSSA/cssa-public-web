@@ -1,5 +1,9 @@
 import upcomingEventChunwan from '../../assets/events-upcoming-chunwan.jpg';
 import eventsZhongqiu from '../../assets/events-zhongqiu.jpeg';
+import upcomingEventDianjing from '../../assets/events-dianjing.jpg';
+import upcomingEventWangqiu from '../../assets/events-wangqiu.jpg';
+import upcomingEventZuqiu from '../../assets/events-zuqiu.jpg';
+import upcomingEventLanqiu from '../../assets/events-lanqiu.jpg';
 import eventsHaoshengyin from '../../assets/events-haoshengyin.jpeg';
 import eventsChunwan from '../../assets/events-chunwan.jpg';
 import eventsYundongji from '../../assets/events-yundongji.jpg';
@@ -15,6 +19,34 @@ export const upcomingEventData: UpcomingEventDataObject[] = [
     image: upcomingEventWolf,
     link: 'https://docs.google.com/forms/d/e/1FAIpQLSdWkfaI0CU5y2AmMOD9iH1Us7iz8ODRWy1zkkMn39avbRFbfw/viewform?usp=publish-editor',
   },
+  {
+    title: '王者荣耀 & 英雄联盟',
+    time: "2026/3/14-15",
+    location: "",
+    image: upcomingEventDianjing,
+    link: "#"
+  },
+  {
+    title: '运动季 - 网球',
+    time: "2026/3/21-22",
+    location: "",
+    image: upcomingEventWangqiu,
+    link: "#"
+  },
+  {
+    title: '运动季 - 足球',
+    time: "2026/4/11",
+    location: "",
+    image: upcomingEventZuqiu,
+    link: "#"
+  },
+  {
+    title: '运动季 - 篮球',
+    time: "",
+    location: "",
+    image: upcomingEventLanqiu,
+    link: "#"
+  }
 ];
 
 export const eventsData: EventDataObject[] = [
