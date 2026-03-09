@@ -7,24 +7,16 @@ import upcomingEventLanqiu from '../../assets/events-lanqiu.jpg';
 import eventsHaoshengyin from '../../assets/events-haoshengyin.jpeg';
 import eventsChunwan from '../../assets/events-chunwan.jpg';
 import eventsYundongji from '../../assets/events-yundongji.jpg';
-import upcomingEventWolf from '../../assets/events-wolf.jpg';
 import eventsXinsheng from '../../assets/events-xinsheng.jpg';
 import { EventDataObject, UpcomingEventDataObject } from './event.type';
 
 export const upcomingEventData: UpcomingEventDataObject[] = [
   {
-    title: '狼人杀 & 阿瓦隆大赛',
-    time: "2026/3/7",
-    location: 'Uris Hall 301',
-    image: upcomingEventWolf,
-    link: 'https://docs.google.com/forms/d/e/1FAIpQLSdWkfaI0CU5y2AmMOD9iH1Us7iz8ODRWy1zkkMn39avbRFbfw/viewform?usp=publish-editor',
-  },
-  {
     title: '王者荣耀 & 英雄联盟',
     time: "2026/3/14-15",
     location: "",
     image: upcomingEventDianjing,
-    link: "#"
+    link: "https://docs.google.com/forms/d/e/1FAIpQLSf74zpJnxB12YukVqCjL3_92fAAc3b-djeWAa-JSQOLFZ6yvw/viewform?usp=header"
   },
   {
     title: '运动季 - 网球',
