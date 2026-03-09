@@ -14,7 +14,7 @@ export const upcomingEventData: UpcomingEventDataObject[] = [
   {
     title: '王者荣耀 & 英雄联盟',
     time: "2026/3/14-15",
-    location: "",
+    location: "Warren Hall 138 / RPCC E-gaming Lounge",
     image: upcomingEventDianjing,
     link: "https://docs.google.com/forms/d/e/1FAIpQLSf74zpJnxB12YukVqCjL3_92fAAc3b-djeWAa-JSQOLFZ6yvw/viewform?usp=header"
   },
