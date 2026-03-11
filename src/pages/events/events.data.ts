@@ -21,9 +21,9 @@ export const upcomingEventData: UpcomingEventDataObject[] = [
   {
     title: '运动季 - 网球',
     time: "2026/3/21-22",
-    location: "",
+    location: "McClintock Tennis / Jessup Tennis Court",
     image: upcomingEventWangqiu,
-    link: "#"
+    link: "https://forms.gle/a19gk4NmrLJopwBy9"
   },
   {
     title: '运动季 - 足球',
