@@ -12,13 +12,6 @@ import { EventDataObject, UpcomingEventDataObject } from './event.type';
 
 export const upcomingEventData: UpcomingEventDataObject[] = [
   {
-    title: '王者荣耀 & 英雄联盟',
-    time: "2026/3/14-15",
-    location: "Warren Hall 138 / RPCC E-gaming Lounge",
-    image: upcomingEventDianjing,
-    link: "https://docs.google.com/forms/d/e/1FAIpQLSf74zpJnxB12YukVqCjL3_92fAAc3b-djeWAa-JSQOLFZ6yvw/viewform?usp=header"
-  },
-  {
     title: '运动季 - 网球',
     time: "2026/3/21-22",
     location: "McClintock Tennis / Jessup Tennis Court",
