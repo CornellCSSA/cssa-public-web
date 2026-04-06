@@ -12,18 +12,11 @@ import { EventDataObject, UpcomingEventDataObject } from './event.type';
 
 export const upcomingEventData: UpcomingEventDataObject[] = [
   {
-    title: '运动季 - 网球',
-    time: "2026/3/21-22",
-    location: "McClintock Tennis / Jessup Tennis Court",
-    image: upcomingEventWangqiu,
-    link: "https://forms.gle/a19gk4NmrLJopwBy9"
-  },
-  {
     title: '运动季 - 足球',
     time: "2026/4/11",
     location: "",
     image: upcomingEventZuqiu,
-    link: "#"
+    link: "https://mp.weixin.qq.com/s/mNZXrd-JTlJf4KP69grYiw"
   },
   {
     title: '运动季 - 篮球',
