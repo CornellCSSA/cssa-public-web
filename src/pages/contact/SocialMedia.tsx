@@ -14,6 +14,7 @@ export default function SocialMedia() {
             <p><span className="social-label">YouTube：</span>@cornellcssa4014</p>
             <p><span className="social-label">Bilibili：</span>Cornell_CSSA</p>
             <p><span className="social-label">E-Mail：</span>cornellcssa6666@gmail.com</p>
+            <p><span className="social-label">BBS论坛：</span>corneller.com</p>
           </div>
 
           <div className="group-photo-container">

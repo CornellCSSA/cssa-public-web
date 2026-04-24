@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import './Navbar.css';
 import logo from '../assets/logo.png';
+import ExternalLinkIcon from './ExternalLinkIcon';
 
 const Navbar: React.FC = () => {
   const location = useLocation();
@@ -45,10 +46,11 @@ const Navbar: React.FC = () => {
           >
             HOME
           </Link>
-          <Link 
-            to="/about" 
+          <Link
+            to="/about"
             className={`nav-link ${location.pathname === '/about' ? 'active' : ''}`}
             onClick={closeMenu}
+            style={{ whiteSpace: 'nowrap' }}
           >
             About CSSA
           </Link>
@@ -73,6 +75,17 @@ const Navbar: React.FC = () => {
           >
             Contact
           </Link>
+          <a
+            href="https://corneller.com"
+            className={`nav-link`}
+            onClick={closeMenu}
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ display: 'flex', alignItems: 'center', gap: '6px' }}
+          >
+            <ExternalLinkIcon size={18} color="currentColor" />
+            BBS
+          </a>
         </div>
       </div>
     </nav>

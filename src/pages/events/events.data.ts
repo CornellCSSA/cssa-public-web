@@ -1,9 +1,5 @@
-import upcomingEventChunwan from '../../assets/events-upcoming-chunwan.jpg';
+import upcomingEventPhotography from '../../assets/events-photography.png';
 import eventsZhongqiu from '../../assets/events-zhongqiu.jpeg';
-import upcomingEventDianjing from '../../assets/events-dianjing.jpg';
-import upcomingEventWangqiu from '../../assets/events-wangqiu.jpg';
-import upcomingEventZuqiu from '../../assets/events-zuqiu.jpg';
-import upcomingEventLanqiu from '../../assets/events-lanqiu.jpg';
 import eventsHaoshengyin from '../../assets/events-haoshengyin.jpeg';
 import eventsChunwan from '../../assets/events-chunwan.jpg';
 import eventsYundongji from '../../assets/events-yundongji.jpg';
@@ -12,18 +8,11 @@ import { EventDataObject, UpcomingEventDataObject } from './event.type';
 
 export const upcomingEventData: UpcomingEventDataObject[] = [
   {
-    title: '运动季 - 足球',
-    time: "2026/4/11",
-    location: "",
-    image: upcomingEventZuqiu,
-    link: "https://mp.weixin.qq.com/s/mNZXrd-JTlJf4KP69grYiw"
-  },
-  {
-    title: '运动季 - 篮球',
-    time: "",
-    location: "",
-    image: upcomingEventLanqiu,
-    link: "#"
+    title: '从雪到花 - 2026摄影赛',
+    time: "2026/5/1截止投稿",
+    location: "线上",
+    image: upcomingEventPhotography,
+    link: "https://mp.weixin.qq.com/s/fj011GvvnfrnuUe8GHj1IQ"
   }
 ];
 
