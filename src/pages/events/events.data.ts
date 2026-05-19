@@ -1,4 +1,3 @@
-import upcomingEventPhotography from '../../assets/events-photography.png';
 import eventsZhongqiu from '../../assets/events-zhongqiu.jpeg';
 import eventsHaoshengyin from '../../assets/events-haoshengyin.jpeg';
 import eventsChunwan from '../../assets/events-chunwan.jpg';
@@ -8,11 +7,11 @@ import { EventDataObject, UpcomingEventDataObject } from './event.type';
 
 export const upcomingEventData: UpcomingEventDataObject[] = [
   {
-    title: '从雪到花 - 2026摄影赛',
-    time: "2026/5/1截止投稿",
-    location: "线上",
-    image: upcomingEventPhotography,
-    link: "https://mp.weixin.qq.com/s/fj011GvvnfrnuUe8GHj1IQ"
+    title: '新生见面会',
+    time: "2026/7",
+    location: "北京/上海/广州",
+    image: eventsXinsheng,
+    link: "#"
   }
 ];
 
