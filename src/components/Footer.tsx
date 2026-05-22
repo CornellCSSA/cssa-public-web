@@ -19,14 +19,8 @@ export default function Footer() {
                 <a href="https://www.instagram.com/cu_cssa" target="_blank" rel="noopener noreferrer">
                     <img src={Instagram} alt="Instagram" className="icon" />
                 </a>
-                <a href="https://www.linkedin.com/company/cornell-cssa/" target="_blank" rel="noopener noreferrer">
-                    <img src={LinkedIn} alt="LinkedIn" className="icon" />
-                </a>
                 <a href="https://www.youtube.com/@cornellcssa4014" target="_blank" rel="noopener noreferrer">
                     <img src={YouTube} alt="YouTube" className="icon" />
-                </a>
-                <a href="https://space.bilibili.com/402043142" target="_blank" rel="noopener noreferrer">
-                    <img src={Bilibili} alt="Bilibili" className="icon icon-bilibili" />
                 </a>
             </div>
             <div className="footer-text">
