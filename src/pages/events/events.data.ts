@@ -1,3 +1,4 @@
+import homeEvents6 from '../../assets/home-events-6.jpg';
 import eventsZhongqiu from '../../assets/events-zhongqiu.jpeg';
 import eventsHaoshengyin from '../../assets/events-haoshengyin.jpeg';
 import eventsChunwan from '../../assets/events-chunwan.jpg';
@@ -6,6 +7,13 @@ import eventsXinsheng from '../../assets/events-xinsheng.jpg';
 import { EventDataObject, UpcomingEventDataObject } from './event.type';
 
 export const upcomingEventData: UpcomingEventDataObject[] = [
+  {
+    title: '新生接机',
+    time: "2026/8/17",
+    location: "纽约JFK机场",
+    image: homeEvents6,
+    link: "https://mp.weixin.qq.com/s/x8u86BCGSVXfTadAybB15Q"
+  },
   {
     title: '新生见面会',
     time: "2026/7",
