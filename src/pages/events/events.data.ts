@@ -4,9 +4,33 @@ import eventsHaoshengyin from '../../assets/events-haoshengyin.jpeg';
 import eventsChunwan from '../../assets/events-chunwan.jpg';
 import eventsYundongji from '../../assets/events-yundongji.jpg';
 import eventsXinsheng from '../../assets/events-xinsheng.jpg';
+import eventsGuangzhou from '../../assets/events-guangzhou.png';
+import eventsShanghai from '../../assets/events-shanghai.png';
+import eventsBeijing from '../../assets/events-beijing.png';
 import { EventDataObject, UpcomingEventDataObject } from './event.type';
 
 export const upcomingEventData: UpcomingEventDataObject[] = [
+  {
+    title: '新生见面会 -- 广州',
+    time: "2026/7/4",
+    location: "广州柏悦酒店",
+    image: eventsGuangzhou,
+    link: "https://mp.weixin.qq.com/s/LlFRT8bb-BcFbvuRHVwGhQ"
+  },
+  {
+    title: '新生见面会 -- 上海',
+    time: "2026/7/11",
+    location: "上海柏悦酒店",
+    image: eventsShanghai,
+    link: "https://mp.weixin.qq.com/s/LlFRT8bb-BcFbvuRHVwGhQ"
+  },
+  {
+    title: '新生见面会 -- 北京',
+    time: "2026/7/18",
+    location: "燕莎凯宾斯基酒店",
+    image: eventsBeijing,
+    link: "https://mp.weixin.qq.com/s/LlFRT8bb-BcFbvuRHVwGhQ"
+  },
   {
     title: '新生接机',
     time: "2026/8/17",
@@ -14,13 +38,6 @@ export const upcomingEventData: UpcomingEventDataObject[] = [
     image: homeEvents6,
     link: "https://mp.weixin.qq.com/s/x8u86BCGSVXfTadAybB15Q"
   },
-  {
-    title: '新生见面会',
-    time: "2026/7",
-    location: "北京/上海/广州",
-    image: eventsXinsheng,
-    link: "#"
-  }
 ];
 
 export const eventsData: EventDataObject[] = [
