@@ -15,7 +15,7 @@ export default function Intro() {
             <div className="intro-content">
                 <h2 className="intro-heading">CSSA简介</h2>
                 <p>
-                    康奈尔大学中国学生学者联合会（Cornell CSSA）是由康奈尔大学的中国学生、学者及教职员工组成的非盈利性互助组织，也是康奈尔大学唯一受中国驻美大使馆认证的华人学联。
+                    康奈尔大学中国学生学者联合会（Cornell CSSA）是由康奈尔大学的中国学生、学者及教职员工组成的非盈利性互助组织。
                 </p>
                 <p>
                     Cornell CSSA以服务全体中国学生学者为本，定期发布有效资讯和指南，提供新生接机和见面会等服务，为中国留学生搭建沟通交流的平台，便利同学们在康奈尔的学习和生活，助力升学与求职。

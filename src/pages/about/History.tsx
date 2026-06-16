@@ -35,7 +35,7 @@ export default function History() {
                     <div className="timeline-entry">
                         <div className="timeline-year">1982</div>
                         <div className="timeline-content">
-                            在当时的公派留学生和中国驻纽约总领馆的努力之下，康奈尔大学中国学生学者联谊会（Cornell CSSA）成立。
+                            在当时的公派留学生的努力之下，康奈尔大学中国学生学者联谊会（Cornell CSSA）成立。
                         </div>
                     </div>
                     <div className="timeline-divider"></div>
