@@ -74,8 +74,7 @@ export default function Home () {
         <div className="about-content">
           <p className='about-content-text'>
             康奈尔大学中国学生学者联合会，英文简称Cornell CSSA，
-            是由康奈尔中国学生群体组成的非盈利性互助服务组织，
-            是康奈尔大学唯一受中国驻美使馆认证的社团。
+            是由康奈尔中国学生群体组成的非盈利性互助服务组织。
           </p>
         </div>
       </div>
