@@ -21,7 +21,7 @@ const Navbar: React.FC = () => {
       <div className="navbar-container">
         {/* Logo */}
         <Link to="/" className="navbar-logo" onClick={closeMenu}>
-          <img src={logo} alt="Cornell CSSA Logo" className="logo-img" />
+          <img src={logo} alt="Cornell CSSA 首页" className="logo-img" />
         </Link>
 
         {/* Hamburger Icon */}

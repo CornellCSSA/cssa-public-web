@@ -10,7 +10,7 @@ export default function Footer() {
     return (
         <div className="footer-container">
             <div className="footer-logo">
-                <img src={logo} alt="Cornell CSSA Logo" className="logo-img" />
+                <img src={logo} alt="" className="logo-img" />
             </div>
             <div className="footer-icons">
                 <a href="https://mp.weixin.qq.com/s/xniFcQpcN1gqwwXYUaqjKw" target="_blank" rel="noopener noreferrer">
