@@ -2,7 +2,7 @@ import './Guide.css';
 import HeroSection from '../../components/HeroSection';
 import ImageWithLoader from '../../components/ImageWithLoader';
 import guideHeroImage from '../../assets/guide-hero.jpg';
-import guideCover from '../../assets/guide.jpg';
+import guideCover from '../../assets/guide.png';
 
 export default function Guide() {
   return (
@@ -13,7 +13,7 @@ export default function Guide() {
         <p>
           请点击下方封面图下载
         </p>
-        <a href="/files/2024版CSSA新生手册.pdf" download="2024版CSSA新生手册.pdf" title="点击下载新生手册" className="guide-download-link">
+        <a href="/files/CUCSSA新生手册2026版.pdf" download="CUCSSA新生手册2026版.pdf" title="点击下载新生手册" className="guide-download-link">
           <ImageWithLoader 
             src={guideCover} 
             alt="Guide Cover" 
