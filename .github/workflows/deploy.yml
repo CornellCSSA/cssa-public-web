@@ -1,0 +1,54 @@
+name: Deploy public site
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-public
+  cancel-in-progress: true
+
+permissions:
+  id-token: write # for AWS OIDC
+  contents: read
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build (vite -> dist/)
+        run: npm run build
+
+      - name: Configure AWS credentials (OIDC)
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ vars.AWS_ROLE_ARN }}
+          aws-region: ${{ vars.AWS_REGION }}
+
+      # 站点桶里只有构建产物。/content/* 和 /media/* 在另一个内容桶里（由内部系统发布），
+      # 所以这里可以放心 --delete。
+      # assets/ 下的文件名带内容 hash，可以长缓存；其余文件（index.html、favicon、PDF）
+      # 文件名固定、内容会变，只给短缓存。
+      - name: Sync build output to S3
+        run: |
+          aws s3 sync dist/assets "s3://${{ vars.S3_BUCKET }}/assets" --delete \
+            --cache-control "public, max-age=31536000, immutable"
+          aws s3 sync dist/ "s3://${{ vars.S3_BUCKET }}" --delete --exclude "assets/*" \
+            --cache-control "public, max-age=0, must-revalidate"
+
+      - name: Invalidate CloudFront cache
+        run: |
+          aws cloudfront create-invalidation \
+            --distribution-id "${{ vars.CLOUDFRONT_DISTRIBUTION_ID }}" \
+            --paths "/*"
