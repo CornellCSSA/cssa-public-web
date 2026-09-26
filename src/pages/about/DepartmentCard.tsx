@@ -1,11 +1,12 @@
-import { DepartmentDataObject } from './departmentType';
+import type { Department } from '../../content/types';
+import { resolveMedia } from '../../content/media';
 import ImageWithLoader from '../../components/ImageWithLoader';
 
-export default function DepartmentCard({ departmentData }: { departmentData: DepartmentDataObject }) {
+export default function DepartmentCard({ departmentData }: { departmentData: Department }) {
     return (
         <div className="department-card">
             <ImageWithLoader 
-                src={departmentData.image} 
+                src={resolveMedia(departmentData.image)} 
                 alt={departmentData.name} 
                 className="department-image" 
                 containerClassName="department-image-container"

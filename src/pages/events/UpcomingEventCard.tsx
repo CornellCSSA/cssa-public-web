@@ -1,13 +1,14 @@
-import { UpcomingEventDataObject } from './event.type';
+import type { UpcomingEvent } from '../../content/types';
+import { isLinkAvailable as hasLink, resolveMedia } from '../../content/media';
 import ImageWithLoader from '../../components/ImageWithLoader';
 
-export default function UpcomingEventCard({ upcomingEventData }: { upcomingEventData: UpcomingEventDataObject }) {
-    const isLinkAvailable = upcomingEventData.link && upcomingEventData.link !== '#';
+export default function UpcomingEventCard({ upcomingEventData }: { upcomingEventData: UpcomingEvent }) {
+    const isLinkAvailable = hasLink(upcomingEventData.link);
 
     return (
         <div className="upcoming-event-card">
             <ImageWithLoader 
-                src={upcomingEventData.image} 
+                src={resolveMedia(upcomingEventData.image)} 
                 alt={upcomingEventData.title} 
                 className="upcoming-event-image" 
                 containerClassName="upcoming-event-image-container"

@@ -1,21 +1,22 @@
 import './Guide.css';
 import HeroSection from '../../components/HeroSection';
 import ImageWithLoader from '../../components/ImageWithLoader';
-import guideHeroImage from '../../assets/guide-hero.jpg';
-import guideCover from '../../assets/guide.png';
+import { useSiteContent } from '../../content/ContentProvider';
+import { resolveMedia } from '../../content/media';
 
 export default function Guide() {
+  const { guide } = useSiteContent();
   return (
     <div>
-      <HeroSection heroImage={guideHeroImage} title="康村指南" />
+      <HeroSection heroImage={resolveMedia(guide.hero.image)} title={guide.hero.title} />
       <div className="guide-container">
-        <h2 className="guide-heading">新生手册</h2>
+        <h2 className="guide-heading">{guide.heading}</h2>
         <p>
-          请点击下方封面图下载
+          {guide.text}
         </p>
-        <a href="/files/CUCSSA新生手册2026版.pdf" download="CUCSSA新生手册2026版.pdf" title="点击下载新生手册" className="guide-download-link">
+        <a href={resolveMedia(guide.file.url)} download={guide.file.fileName} title="点击下载新生手册" className="guide-download-link">
           <ImageWithLoader 
-            src={guideCover} 
+            src={resolveMedia(guide.cover)} 
             alt="Guide Cover" 
             className="guide-cover-img" 
           />
