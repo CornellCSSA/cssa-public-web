@@ -1,0 +1,140 @@
+{
+  "home": {
+    "hero": {
+      "slides": ["assets/cover1.jpg", "assets/cover2.png", "assets/cover3.png"],
+      "titleZh": "康奈尔大学中国学生学者联合会",
+      "titleEn": "Cornell CSSA",
+      "subtitle": "Cornell Chinese Students and Scholars Association"
+    },
+    "about": {
+      "heading": "关于CSSA",
+      "text": "康奈尔大学中国学生学者联合会，英文简称Cornell CSSA， 是由康奈尔中国学生群体组成的非盈利性互助服务组织。"
+    },
+    "events": {
+      "heading": "活动",
+      "text": "我们致力于促进康奈尔中国学生群体之间的交流，弘扬中华文化，每年举办如中秋嘉年华、春晚等文化类活动，好声音、运动季等娱乐类活动，以及求职、接机等服务类活动。",
+      "highlights": [
+        { "title": "中秋嘉年华", "image": "assets/home-events-1.jpg", "link": "https://mp.weixin.qq.com/s/YZ2qmgHP29AeaEnPpKt80Q" },
+        { "title": "新生见面会", "image": "assets/home-events-2.jpg", "link": "https://mp.weixin.qq.com/s/OhopG7Us-s9E_NYsf6Q0RA" },
+        { "title": "春晚", "image": "assets/home-events-3.jpg", "link": "https://mp.weixin.qq.com/s/_0rCBHrL8SIHFgrnPPDwAg" },
+        { "title": "运动季", "image": "assets/home-events-4.jpg", "link": "https://mp.weixin.qq.com/s/CJjMq4MCUNfU2NrMsJXm3w" },
+        { "title": "康村好声音", "image": "assets/home-events-5.jpeg", "link": "https://mp.weixin.qq.com/s/QYtnHw7qfHKkWdQAD-qt9A" },
+        { "title": "新生接机", "image": "assets/home-events-6.jpg", "link": "" }
+      ]
+    },
+    "guide": {
+      "heading": "新生手册",
+      "text": "为了帮助刚来到康奈尔的同学尽快适应这里的生活，Cornell CSSA编写整理了新生手册，涵盖了衣、食、住、行、学各方面的指南和攻略，希望对大家有所帮助！"
+    }
+  },
+  "about": {
+    "hero": { "image": "assets/about-hero.jpg", "title": "关于CSSA" },
+    "intro": {
+      "heading": "CSSA简介",
+      "paragraphs": [
+        "康奈尔大学中国学生学者联合会（Cornell CSSA）是由康奈尔大学的中国学生、学者及教职员工组成的非盈利性互助组织。",
+        "Cornell CSSA以服务全体中国学生学者为本，定期发布有效资讯和指南，提供新生接机和见面会等服务，为中国留学生搭建沟通交流的平台，便利同学们在康奈尔的学习和生活，助力升学与求职。",
+        "Cornell CSSA以丰富全体中国学生学者生活为要，每年举办如春晚、中秋嘉年华、康村好声音、康村运动季等丰富有趣的活动，向世界各国的同学弘扬中华文化。"
+      ],
+      "image": "assets/group-photo.jpg"
+    },
+    "history": {
+      "heading": "CSSA历史",
+      "entries": [
+        { "year": "1904", "text": "晚清中国留学生自发组织的“Cornell Chinese Student Club”。该组织在清政府派遣大量庚子赔款留学生赴美后发展壮大。" },
+        { "year": "1950", "text": "朝鲜战争之后，来自中国大陆的留美学生基本绝迹，Chinese Student Club逐渐演变成为了以美籍华人为主的学生组织Cornell CSA。" },
+        { "year": "1980", "text": "随着中美建交与改革开放，来自中国大陆的留学生重新出现在康奈尔大学。" },
+        { "year": "1982", "text": "在当时的公派留学生的努力之下，康奈尔大学中国学生学者联谊会（Cornell CSSA）成立。" },
+        { "year": "21世纪", "text": "随着中国学生人数的增加，联谊会更名为联合会，采取了主席团制度，形成了主席团服务其他中国学生的模式，最终形成了今天学联的架构。" }
+      ],
+      "image": "assets/about-history.jpg"
+    },
+    "departments": {
+      "heading": "部门介绍",
+      "text": "Cornell CSSA主席团（E-Board）是服务康奈尔大学全体中国学生学者的常设机构，设4个职能部门和秘书处。学联主席团采用扁平化管理的模式；主席团成员规模保持在50人左右。",
+      "items": [
+        { "name": "主席机构", "image": "assets/about-zhuxi.jpg", "description": "主席机构是CSSA的领导核心，负责制定和执行CSSA的各项决策和计划，由主席、内务副主席、外务副主席组成，任期一年。" },
+        { "name": "宣传部", "image": "assets/about-xuanchuan.jpg", "description": "宣传部承担了将组织的活动和想法宣发给校园内外的重要工作。部门任务有活动宣传，公众号管理，公众号推文制作，社交媒体管理，视频剪辑制作，和海报设计等工作。" },
+        { "name": "外联部", "image": "assets/about-wailian.jpg", "description": "外联部是CSSA与外界沟通的窗口，负责与各大赞助商以及战略合作伙伴对接；与其他学联和企业沟通策划企校与校间活动，为同学们争取更多职业发展资源。" },
+        { "name": "内联部", "image": "assets/about-neilian.jpg", "description": "内联部主要负责CSSA内部成员之间的沟通联络，让大家在CSSA能够玩得开心，加强彼此之间的bonding。具体的工作包括为成员准备生日祝福，安排策划内联活动，组织年度formal等。" },
+        { "name": "财务部", "image": "assets/about-caiwu.jpg", "description": "财务部掌管学联的财务大权。对内工作包括统筹规划并制定全年预算；审核各项财务开支并进行账务处理。对外工作包括募集筹措funding资金；完善funding申请白皮书。" },
+        { "name": "秘书处", "image": "assets/about-mishu.jpg", "description": "秘书处主要负责CSSA的日常事务并为其他部门提供技术支持。具体工作包括管理CSSA微信小助手账号、维护CSSA官网、统筹安排CSSA日程和记录例会内容等。" }
+      ]
+    },
+    "join": {
+      "heading": "加入E-Board",
+      "paragraphs": [
+        "Cornell CSSA E-Board 欢迎所有热爱学生工作、有想法、且善于合作的康奈尔同学申请加入。申请人要求可以流利使用中文。申请时需提交个人简历，选择第一志愿和第二志愿部门，并且认真回答报名问题。我们期待你的加入！",
+        "CSSA招新信息预计于每年8月发布，有意向的同学敬请关注Cornell CSSA微信公众号并积极参与新生见面会等活动。如有问题欢迎联系CSSA微信小助手"
+      ],
+      "link": "https://mp.weixin.qq.com/s/qhDfrZjF_ApcIXr3RCyc9A",
+      "qrCodes": [
+        { "label": "CSSA公众号", "image": "assets/about-gongzhonghao-qr.png" },
+        { "label": "CSSA小助手", "image": "assets/about-xiaozhushou-qr.png" }
+      ]
+    }
+  },
+  "events": {
+    "hero": { "image": "assets/events-hero.jpg", "title": "CSSA活动" },
+    "upcoming": {
+      "heading": "即将举办的活动",
+      "items": [
+        { "title": "新生见面会 -- 广州", "time": "2026/7/4", "location": "广州柏悦酒店", "image": "assets/events-guangzhou.png", "link": "https://mp.weixin.qq.com/s/LlFRT8bb-BcFbvuRHVwGhQ" },
+        { "title": "新生见面会 -- 上海", "time": "2026/7/11", "location": "上海柏悦酒店", "image": "assets/events-shanghai.png", "link": "https://mp.weixin.qq.com/s/LlFRT8bb-BcFbvuRHVwGhQ" },
+        { "title": "新生见面会 -- 北京", "time": "2026/7/18", "location": "燕莎凯宾斯基酒店", "image": "assets/events-beijing.png", "link": "https://mp.weixin.qq.com/s/LlFRT8bb-BcFbvuRHVwGhQ" },
+        { "title": "新生接机", "time": "2026/8/17", "location": "纽约JFK机场", "image": "assets/home-events-6.jpg", "link": "https://mp.weixin.qq.com/s/x8u86BCGSVXfTadAybB15Q" }
+      ]
+    },
+    "annual": {
+      "heading": "活动简介",
+      "items": [
+        { "title": "中秋嘉年华", "time": "10月", "description": "但愿人长久，千里共婵娟。每年的中秋嘉年华是康村秋季学期最为盛大的中华传统活动，有猜灯谜、写书法等中华传统项目；有月饼、奶茶等中国特色美食。中秋嘉年华让五湖四海的中国学生一同沉浸在浓浓的中秋氛围中。", "image": "assets/events-zhongqiu.jpeg", "link": "https://mp.weixin.qq.com/s/YZ2qmgHP29AeaEnPpKt80Q" },
+        { "title": "康村好声音", "time": "11月", "description": "康村好声音是秋季学期最具活力的校园舞台之一，聚光灯下汇聚了热望与赤子心，每一位同学都用歌声书写着自己的青春篇章。这里有少年时代心动的回声，也有并肩同行的挚友把陪伴与回忆唱进旋律。康村好声音让有着不同故事的我们汇聚在同一个舞台，共同感受青春的力量与温度。", "image": "assets/events-haoshengyin.jpeg", "link": "http://xhslink.com/o/9DfQ1zTo88c" },
+        { "title": "春晚", "time": "2月左右", "description": "春晚是康村每年最为热闹的大型晚会。CSSA用自己的春晚将我们康村华人大家庭聚集在一起，为大家带来“传统与现代结合，东方与西方碰撞”的文化盛宴，让大家在异国他乡开开心心过大年。", "image": "assets/events-chunwan.jpg", "link": "https://mp.weixin.qq.com/s/_0rCBHrL8SIHFgrnPPDwAg" },
+        { "title": "运动季", "time": "3-5月", "description": "CSSA的运动季包括足球、篮球、羽毛球、乒乓球、电竞等各类项目，旨在为同学们提供一个锻炼身体、增进友谊的平台。期待与大家在美好的春天里一起挥洒汗水，共享运动的无限乐趣！", "image": "assets/events-yundongji.jpg", "link": "https://mp.weixin.qq.com/s/CJjMq4MCUNfU2NrMsJXm3w" },
+        { "title": "新生见面会", "time": "7月", "description": "CSSA 每年暑期都会举办热闹的新生见面会，带着满满的欢迎气息，帮助新同学们更快融入康村、交到新朋友。现场不仅有学长学姐们耐心、真诚的问答交流，大家还会一起聊选课攻略、抢热门课的小技巧、以及各种社团的精彩安利。", "image": "assets/events-xinsheng.jpg", "link": "https://mp.weixin.qq.com/s/OhopG7Us-s9E_NYsf6Q0RA" }
+      ]
+    }
+  },
+  "guide": {
+    "hero": { "image": "assets/guide-hero.jpg", "title": "康村指南" },
+    "heading": "新生手册",
+    "text": "请点击下方封面图下载",
+    "cover": "assets/guide.png",
+    "file": { "url": "/files/CUCSSA新生手册2026版.pdf", "fileName": "CUCSSA新生手册2026版.pdf" }
+  },
+  "contact": {
+    "hero": { "image": "assets/contact-hero.jpg", "title": "联系我们" },
+    "social": {
+      "heading": "社交媒体",
+      "items": [
+        { "label": "微信公众号", "value": "CornellCSSA" },
+        { "label": "小红书", "value": "@康奈尔学联" },
+        { "label": "Instagram", "value": "cu_cssa" },
+        { "label": "LinkedIn", "value": "Cornell CSSA" },
+        { "label": "YouTube", "value": "@cornellcssa4014" },
+        { "label": "Bilibili", "value": "Cornell_CSSA" },
+        { "label": "E-Mail", "value": "cornellcssa6666@gmail.com" },
+        { "label": "BBS论坛", "value": "corneller.com" }
+      ],
+      "image": "assets/group-photo.jpg"
+    },
+    "support": {
+      "heading": "赞助合作",
+      "text": "如有赞助推广或合作需求，请添加Cornell CSSA小助手1号的微信 (微信号：cssa_cornell)",
+      "qrCode": "assets/QR-code.jpg"
+    }
+  },
+  "footer": {
+    "socialLinks": [
+      { "platform": "wechat", "url": "https://mp.weixin.qq.com/s/xniFcQpcN1gqwwXYUaqjKw" },
+      { "platform": "instagram", "url": "https://www.instagram.com/cu_cssa" },
+      { "platform": "youtube", "url": "https://www.youtube.com/@cornellcssa4014" }
+    ],
+    "notice": "This organization is a registered student organization of Cornell University",
+    "legalLink": {
+      "text": "Cornell Equal Education and Employment",
+      "url": "https://hr.cornell.edu/about/workplace-rights/equal-education-and-employment"
+    }
+  }
+}

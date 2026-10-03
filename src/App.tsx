@@ -6,22 +6,25 @@ import Events from './pages/events/Events';
 import Contact from './pages/contact/Contact';
 import About from './pages/about/About';
 import ScrollToTop from './components/ScrollToTop';
+import { ContentProvider } from './content/ContentProvider';
 import './App.css';
 
 function App() {
   return (
-    <Router>
-      <ScrollToTop />
-      <MainLayout>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/guide" element={<Guide />} />
-          <Route path="/events" element={<Events />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/about" element={<About />} />
-        </Routes>
-      </MainLayout>
-    </Router>
+    <ContentProvider>
+      <Router>
+        <ScrollToTop />
+        <MainLayout>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/guide" element={<Guide />} />
+            <Route path="/events" element={<Events />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/about" element={<About />} />
+          </Routes>
+        </MainLayout>
+      </Router>
+    </ContentProvider>
   );
 }
 

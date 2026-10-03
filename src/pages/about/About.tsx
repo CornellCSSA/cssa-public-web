@@ -1,26 +1,25 @@
 import './About.css'
 import HeroSection from '../../components/HeroSection';
-import aboutHeroImage from '../../assets/about-hero.jpg';
 import Intro from './Intro';
 import History from './History';
 import Join from './Join';
-import { departmentsData } from './departmentsData';
 import DepartmentCard from './DepartmentCard';
+import { useSiteContent } from '../../content/ContentProvider';
+import { resolveMedia } from '../../content/media';
 
 export default function About() {
+	const { about } = useSiteContent();
 	return (
 		<div>
-			<HeroSection heroImage={aboutHeroImage} title="关于CSSA" />
+			<HeroSection heroImage={resolveMedia(about.hero.image)} title={about.hero.title} />
 			<Intro />
 			<History />
 			<div className="departments-container">
-				<h2 className="departments-heading">部门介绍</h2>
-				<p>
-					Cornell CSSA主席团（E-Board）是服务康奈尔大学全体中国学生学者的常设机构，设4个职能部门和秘书处。学联主席团采用扁平化管理的模式；主席团成员规模保持在50人左右。
-				</p>
+				<h2 className="departments-heading">{about.departments.heading}</h2>
+				<p>{about.departments.text}</p>
 				<div className="departments-content">
-					{departmentsData.map((departmentData) => (
-						<DepartmentCard key={departmentData.name} departmentData={departmentData} />
+					{about.departments.items.map((departmentData, index) => (
+						<DepartmentCard key={index} departmentData={departmentData} />
 					))}
 				</div>
 			</div>
