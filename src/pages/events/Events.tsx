@@ -10,12 +10,16 @@ export default function Events() {
   return (
     <div>
       <HeroSection heroImage={resolveMedia(events.hero.image)} title={events.hero.title} />
-      <h2 className="upcoming-events-heading">{events.upcoming.heading}</h2>
-      <div className="upcoming-events-container">
-        {events.upcoming.items.map((event, index) => (
-          <UpcomingEventCard key={index} upcomingEventData={event} />
-        ))}
-      </div>
+      {events.upcoming.items.length > 0 && (
+        <>
+          <h2 className="upcoming-events-heading">{events.upcoming.heading}</h2>
+          <div className="upcoming-events-container">
+            {events.upcoming.items.map((event, index) => (
+              <UpcomingEventCard key={index} upcomingEventData={event} />
+            ))}
+          </div>
+        </>
+      )}
       <div className="events-outer-container">
       <h2 className="events-heading">{events.annual.heading}</h2>
         <div className="events-container">
