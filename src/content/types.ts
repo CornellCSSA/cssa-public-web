@@ -34,10 +34,21 @@ export interface HomeContent {
   guide: { heading: string; text: string };
 }
 
+export type MemberDepartment =
+  | 'presidium'
+  | 'media'
+  | 'external'
+  | 'internal'
+  | 'finance'
+  | 'events'
+  | 'secretariat';
+
 export interface Department {
   name: string;
   image: string;
   description: string;
+  /** 对应内部系统的哪个部门，供内部面板的部门页取用；官网不用它。 */
+  department?: MemberDepartment;
 }
 
 export interface AboutContent {
